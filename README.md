@@ -14,7 +14,7 @@
 
 # webpack-serve
 
-> Deprecated? Naw. webpack-dev-serve is still old and busted.
+> Deprecated? Naw. webpack-dev-server is still old and busted.
 
 A lean, modern, and flexible webpack development server
 
