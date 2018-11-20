@@ -72,9 +72,12 @@ jobs:
     <<: *canary_tests
   analysis:
     docker:
-      - image: webpackcontrib/circleci-node-base:latest
+      - image: webpackcontrib/circleci-node10:latest
     steps:
       - checkout
+      - run:
+          name: NPM Update
+          command: npm install npm@latest -g
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
