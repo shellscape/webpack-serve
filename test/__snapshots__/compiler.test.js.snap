@@ -315,7 +315,7 @@ Object {
       "emitted": true,
       "isOverSizeLimit": undefined,
       "name": "./output.js.map",
-      "size": 6012,
+      "size": 6047,
     },
   ],
   "errors": 0,
@@ -497,7 +497,7 @@ Object {
       "emitted": true,
       "isOverSizeLimit": undefined,
       "name": "./output.js.map",
-      "size": 6012,
+      "size": 6047,
     },
   ],
   "errors": 0,
@@ -509,7 +509,7 @@ exports[`compiler invalid config error 1`] = `
 "An error was thrown while initializing Webpack
   WebpackOptionsValidationError: Invalid configuration object. Webpack has been initialised using a configuration object that does not match the API schema.
  - configuration has an unknown property 'foo'. These properties are valid:
-   object { mode?, amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry?, externals?, loader?, module?, name?, node?, output?, optimization?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, serve?, stats?, target?, watch?, watchOptions? }
+   object { amd?, bail?, cache?, context?, dependencies?, devServer?, devtool?, entry?, externals?, loader?, mode?, module?, name?, node?, optimization?, output?, parallelism?, performance?, plugins?, profile?, recordsInputPath?, recordsOutputPath?, recordsPath?, resolve?, resolveLoader?, serve?, stats?, target?, watch?, watchOptions? }
    For typos: please correct them.
    For loader options: webpack >= v2.0.0 no longer allows custom properties in configuration.
      Loaders should be updated to allow passing options via loader options in module.rules.
