@@ -14,7 +14,7 @@
 
 # webpack-serve
 
-For a novel, truly fast and lightweight, yet full-featured development server - try [webpack-plugin-serve](https://www.npmjs.com/package/webpack-plugin-serve). It is superior to this project in every way.
+For a novel, fast(er), and superior development server - try [webpack-plugin-serve](https://www.npmjs.com/package/webpack-plugin-serve)
 
 > Note: webpack-serve is now being maintained on [this fork](https://github.com/shellscape/webpack-serve), and will be open to Pull Requests and Issues for users that prefer this dev server. The webpack-contrib org has chosen to drop support for this module and is no longer actively maintaining it.
 
