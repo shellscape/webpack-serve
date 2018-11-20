@@ -84,8 +84,8 @@ jobs:
           name: Run linting.
           command: npm run lint
       - run:
-          name: Run NSP Security Check.
-          command: npm run security
+          name: NPM Audit
+          command: npm audit
       - run:
           name: Validate Commit Messages
           command: npm run ci:lint:commits
@@ -106,7 +106,6 @@ jobs:
           name: Publish to NPM
           command: printf "noop running conventional-github-releaser"
 
-version: 2.0
 workflows:
   version: 2
   validate-publish:

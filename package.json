@@ -104,7 +104,6 @@
     "lint-staged": "^7.1.3",
     "mocha": "^5.0.0",
     "mocha-chrome": "^1.0.3",
-    "nsp": "^3.2.1",
     "nyc": "^12.0.2",
     "pre-commit": "^1.2.2",
     "prettier": "^1.12.1",

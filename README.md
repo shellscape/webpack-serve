@@ -14,7 +14,9 @@
 
 # webpack-serve
 
-> Deprecated? Naw. webpack-dev-server is still old and busted.
+For a novel, truly fast and lightweight, yet full-featured development server - try [webpack-plugin-serve](https://www.npmjs.com/package/webpack-plugin-serve). It is superior to this project in every way.
+
+> Note: webpack-serve is now being maintained on [this fork](https://github.com/shellscape/webpack-serve), and will be open to Pull Requests and Issues for users that prefer this dev server. The webpack-contrib org has chosen to drop support for this module and is no longer actively maintaining it.
 
 A lean, modern, and flexible webpack development server
 
@@ -553,14 +555,14 @@ guidelines if you haven't yet done so.
 [node]: https://img.shields.io/node/v/webpack-serve.svg
 [node-url]: https://nodejs.org
 
-[deps]: https://david-dm.org/webpack-contrib/webpack-serve.svg
-[deps-url]: https://david-dm.org/webpack-contrib/webpack-serve
+[deps]: https://david-dm.org/shellscape/webpack-serve.svg
+[deps-url]: https://david-dm.org/shellscape/webpack-serve
 
-[tests]: 	https://img.shields.io/circleci/project/github/webpack-contrib/webpack-serve.svg
-[tests-url]: https://circleci.com/gh/webpack-contrib/webpack-serve
+[tests]: 	https://img.shields.io/circleci/project/github/shellscape/webpack-serve.svg
+[tests-url]: https://circleci.com/gh/shellscape/webpack-serve
 
-[cover]: https://codecov.io/gh/webpack-contrib/webpack-serve/branch/master/graph/badge.svg
-[cover-url]: https://codecov.io/gh/webpack-contrib/webpack-serve
+[cover]: https://codecov.io/gh/shellscape/webpack-serve/branch/master/graph/badge.svg
+[cover-url]: https://codecov.io/gh/shellscape/webpack-serve
 
 [chat]: https://img.shields.io/badge/gitter-webpack%2Fwebpack-brightgreen.svg
 [chat-url]: https://gitter.im/webpack/webpack
@@ -569,5 +571,5 @@ guidelines if you haven't yet done so.
 [size-url]: https://packagephobia.now.sh/result?p=webpack-serve
 
 [dev-ware]: https://github.com/webpack/webpack-dev-middleware#options
-[hot-client]: https://github.com/webpack-contrib/webpack-hot-client#options
+[hot-client]: https://github.com/shellscape/webpack-hot-client#options
 [https-opts]: https://nodejs.org/api/tls.html#tls_tls_createsecurecontext_options
