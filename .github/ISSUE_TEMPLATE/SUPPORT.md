@@ -1,9 +1,7 @@
 ---
 name: 🆘 Support, Help, and Advice
-about: 👉🏽 Need support, help, or advice? Don't open an issue! Head to StackOverflow or https://gitter.im/webpack/webpack.
+about: 👉🏽 If you want to ask how to do a thing with this project, this is the place for you.
 
 ---
 
-Hey there! If you need support, help, or advice then this is not the place to ask.
-Please visit [StackOverflow](https://stackoverflow.com/questions/tagged/webpack)
-or [the Webpack Gitter](https://gitter.im/webpack/webpack) instead.
+If you arrived here because you think this project's documentation is unclear, insufficient, or wrong, please consider creating an issue for the documentation instead.
