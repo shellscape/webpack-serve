@@ -32,11 +32,27 @@ const help = chalk`
     $ webpack-serve [...options]
 
   {underline Options}
-    --config          A path to a webpack config file
+    --all               Apply webpack-plugin-serve to all compilers in the config
+    --client.address    Overrides the WebSocket address in the client
+    --client.retry      Instructs the client to attempt to reconnect all WebSockets when interrupted
+    --client.silent     Instructs the client not to log anything to the console.
+    --compress          Enables compression middleware which serves files with GZip compression.
+    --config            A path to a webpack config file
     --config.\{name\}   A path to a webpack config file, and the config name to run
-    --help            Displays this message
-    --silent          Instruct the CLI to produce no console output
-    --version         Displays webpack-nano and webpack versions
+    --help              Displays this message
+    --history-fallback  Enables History API Fallback
+    --hmr               Enables Hot Module Replacement. On by default
+    --host              Sets the host the server should listen from
+    --http2             Instructs the server to enable HTTP2
+    --live-reload       Instructs the client to perform a full page reload after each build
+    --open              Opens the default browser to the set host and port
+    --port              Sets the port on which the server should listen
+    --progress          Shows build progress in the client
+    --silent            Instruct the CLI to produce no console output
+    --static            Sets the directory from which static files will be served
+    --status            Shows build status (errors, warnings) in the client
+    --version           Displays webpack-nano and webpack versions
+    --wait-for-build    Instructs the server to halt middleware processing until the current build is done.
 
   {underline Examples}
     $ webpack-serve
@@ -64,11 +80,10 @@ const doeet = async () => {
     }
   };
 
-  check({'_':''}, argv);
+  check(argv);
 
   if (argv.help) {
     stderr(help);
-    return;
   }
 
   if (argv.version || argv.v) {
@@ -76,7 +91,6 @@ const doeet = async () => {
 webpack-serve v${pkg.version}
 webpack       v${webpack.version}
 `);
-    return;
   }
 
   const config = await loadConfig(argv);
