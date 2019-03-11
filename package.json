@@ -72,5 +72,5 @@
       "eslint --fix",
       "git add"
     ]
-  },
+  }
 }
