@@ -84,6 +84,7 @@ const doeet = async () => {
 
   if (argv.help) {
     stderr(help);
+    return;
   }
 
   if (argv.version || argv.v) {
@@ -91,6 +92,7 @@ const doeet = async () => {
 webpack-serve v${pkg.version}
 webpack       v${webpack.version}
 `);
+    return;
   }
 
   const config = await loadConfig(argv);

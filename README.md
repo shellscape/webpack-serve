@@ -21,9 +21,7 @@
 
 # webpack-serve
 
-{description}
-
-A CLI for [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) - A Webpack development server in a plugin.
+A CLI for [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) - A Webpack development server in a plugin. _(While using a CLI such as webpack-serve is convenient, we recommend using `webpack-plugin-serve` directly in your webpack config instead.)_
 
 <a href="https://www.patreon.com/shellscape">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
@@ -39,7 +37,7 @@ This module requires an [Active LTS](https://github.com/nodejs/Release) Node ver
 
 ## Feature Parity
 
-{feature parity}
+Since this CLI leverages `webpack-plugin-serve`, the same feature parity information applies. Please see the [`webpack-plugin-serve` Feature Comparison](https://github.com/shellscape/webpack-plugin-serve/blob/HEAD/.github/FEATURES.md) for more information.
 
 ## Install
 
@@ -51,11 +49,45 @@ npm install webpack-serve --save-dev
 
 ## Usage
 
-{usage}
+```console
+A CLI for webpack-plugin-serve, providing a premier webpack development server
 
-## Options
+Usage
+  $ webpack-serve [...options]
 
-{link to wps options}
+Options
+  --all               Apply webpack-plugin-serve to all compilers in the config
+  --client.address    Overrides the WebSocket address in the client
+  --client.retry      Instructs the client to attempt to reconnect all WebSockets when interrupted
+  --client.silent     Instructs the client not to log anything to the console.
+  --compress          Enables compression middleware which serves files with GZip compression.
+  --config            A path to a webpack config file
+  --config.{name}     A path to a webpack config file, and the config name to run
+  --help              Displays this message
+  --history-fallback  Enables History API Fallback
+  --hmr               Enables Hot Module Replacement. On by default
+  --host              Sets the host the server should listen from
+  --http2             Instructs the server to enable HTTP2
+  --live-reload       Instructs the client to perform a full page reload after each build
+  --open              Opens the default browser to the set host and port
+  --port              Sets the port on which the server should listen
+  --progress          Shows build progress in the client
+  --silent            Instruct the CLI to produce no console output
+  --static            Sets the directory from which static files will be served
+  --status            Shows build status (errors, warnings) in the client
+  --version           Displays webpack-nano and webpack versions
+  --wait-for-build    Instructs the server to halt middleware processing until the current build is done.
+
+Examples
+  $ webpack-serve
+  $ webpack-serve --help
+  $ webpack-serve --config webpack.config.js
+  $ webpack-serve --config.serve webpack.config.js
+```
+
+## Flags
+
+Please reference the [`webpack-plugin-serve` Options](https://github.com/shellscape/webpack-plugin-serve#options) for information and use. Most options are analogous to the flags listed above.
 
 ## Meta
 

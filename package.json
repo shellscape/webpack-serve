@@ -1,7 +1,10 @@
 {
   "name": "webpack-serve",
-  "version": "3.0.0",
-  "description": "A lean, modern, and flexible webpack development server",
+  "version": "3.0.0-beta.1",
+  "publishConfig": {
+    "tag": "beta"
+  },
+  "description": "A CLI for webpack-plugin-serve, providing a premier webpack development server",
   "license": "MIT",
   "repository": "shellscape/webpack-serve",
   "author": "Andrew Powell <andrew@shellscape.org>",
