@@ -1,9 +1,11 @@
 require('./component');
 
+const { error } = console;
+
 if (module.hot) {
   module.hot.accept((err) => {
     if (err) {
-      console.error('HMR', err);
+      error('HMR', err);
     }
   });
 }
