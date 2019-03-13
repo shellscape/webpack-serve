@@ -17,6 +17,8 @@ test('single compiler', setup('simple'), async (t, util) => {
 
   await replace(componentPath, content);
 
+  console.log(await page.evaluate(() => document.body.innerHTML));
+
   const value = await page.evaluate(() => document.querySelector('main').innerHTML);
 
   t.is(value, 'test');

@@ -11,9 +11,12 @@ const strip = require('strip-ansi');
 
 const binPath = join(__dirname, '../../bin/webpack-serve');
 
+const { log } = console;
+
 const replace = (path, content) => {
   return {
     then(r) {
+      log('replacing:', path);
       writeFileSync(path, content);
       setTimeout(r, 5000);
     }
@@ -42,6 +45,7 @@ const setup = (fixture) => async (t, run) => {
   const tempName = t.title.replace(/\s/g, '-');
   const destPath = await mkdir(join(srcPath, `temp-${tempName}`));
 
+  log('copying:', srcPath, 'to', destPath);
   await copy(`${srcPath}/*`, destPath);
 
   const util = {
@@ -52,7 +56,7 @@ const setup = (fixture) => async (t, run) => {
       const { stderr } = execa('node', [binPath, `--port=${port}`].concat(flags), {
         cwd: destPath
       });
-      // stderr.on('data', (d) => console.log(d.toString()));
+      // stderr.on('data', (d) => log(d.toString()));
       return waitForBuild(stderr);
     },
     url

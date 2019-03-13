@@ -20,6 +20,8 @@ test('multi compiler', setup('multi'), async (t, util) => {
   await replace(componentPath, componentContent);
   await replace(workerPath, workerContent);
 
+  console.log(await page.evaluate(() => document.body.innerHTML));
+
   const componentValue = await page.evaluate(() => document.querySelector('main').innerHTML);
   const workValue = await page.evaluate(() => document.querySelector('#worker').innerHTML);
 
