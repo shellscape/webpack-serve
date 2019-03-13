@@ -1,4 +1,7 @@
 /node_modules
-/dist
-test/*/*.snap
-test/fixtures/*/output.js*
+dist
+*.snap
+output.js
+*-wps-hmr.*
+*.hot-update.js
+test/**/output

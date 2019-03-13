@@ -5,14 +5,13 @@ about: Are the docs lacking or missing something? Do they need some new 🔥 hot
 ---
 
 <!--
-  Issues are so 🔥
+  ⚡️ katchow! We 💛 issues.
 
-  If you remove or skip this template, you'll make the 🐼 sad and the mighty god
-  of Github will appear and pile-drive the close button from a great height
-  while making animal noises.
+  Please - do not - remove this template.
+  Please - do not - skip or remove parts of this template.
+  Or your issue may be closed.
 
-  👉🏽 Need support, advice, or help? Don't open an issue!
-  Head to StackOverflow or https://gitter.im/webpack/webpack.
+  👉🏽 Need help or support? Open a SUPPORT issue instead.
 -->
 
 Documentation Is:
@@ -23,7 +22,6 @@ Documentation Is:
 - [ ] Needed
 - [ ] Confusing
 - [ ] Not Sure?
-
 
 ### Please Explain in Detail...
 

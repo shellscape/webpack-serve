@@ -1,52 +1,38 @@
 ---
-name: 🐛 Bug Report
+name: 🐞 Bug Report
 about: Something went awry and you'd like to tell us about it.
 
 ---
 
 <!--
-  Issues are so 🔥
+  ⚡️ katchow! We 💛 issues.
 
-  If you remove or skip this template, you'll make the 🐼 sad and the mighty god
-  of Github will appear and pile-drive the close button from a great height
-  while making animal noises.
+  Please - do not - remove this template.
+  Please - do not - skip or remove parts of this template.
+  Or your issue may be closed.
 
-  👉🏽 Need support, advice, or help? Don't open an issue!
-  Head to StackOverflow or https://gitter.im/webpack/webpack.
+  👉🏽 Need help or support? Open a SUPPORT issue instead.
 -->
 
-* Operating System:
-* Node Version:
-* NPM Version:
-* webpack Version:
-* webpack-serve Version:
-
-
-### Expected Behavior
-
-<!-- Remove this section if not reporting a bug or modification request. -->
-
-### Actual Behavior
-
-<!-- Remove this section if not reporting a bug or modification request. -->
-
-### Code
-
-```js
-  // webpack.config.js
-  // If your bitchin' code blocks are over 20 lines, please paste a link to a gist
-  // (https://gist.github.com).
-```
-
-```js
-  // additional code, HEY YO remove this block if you don't need it
-```
+- Webpack Version:
+- Operating System (or Browser):
+- Node Version:
+- webpack-serve Version:
 
 ### How Do We Reproduce?
 
 <!--
-  Remove this section if not reporting a bug.
+  Issues without minimal reproductions will be closed! Please provide one by:
+  2. Work to isolate the problem and provide the exact steps in this issue, or
+  3. Provide a minimal repository link (Read https://git.io/fNzHA for instructions). These may take more time to triage than the other options.
+-->
 
-  If your webpack config is over 50 lines long, please provide a URL to a repo
-  for your beefy 🍖 app that we can use to reproduce.
+
+### Expected Behavior
+
+
+### Actual Behavior
+
+<!--
+  The situation may arise where some small code snippets also need to be provided. In that situation, please add your code below using Fenced Code Blocks (https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 -->

@@ -1,19 +1,25 @@
+const { resolve } = require('path');
+
 module.exports = [
   {
     context: __dirname,
-    entry: './client.js',
+    entry: './app.js',
+    mode: 'development',
     output: {
-      filename: 'client.js',
-      path: '/client',
-      publicPath: '/static/',
+      filename: './dist-app.js',
+      path: resolve(__dirname, './output'),
+      publicPath: 'output/'
     },
+    watch: true
   },
   {
     context: __dirname,
-    entry: './server.js',
+    entry: ['./worker.js'],
+    mode: 'development',
     output: {
-      filename: 'server.js',
-      path: '/server',
-    },
-  },
+      filename: './dist-worker.js',
+      path: resolve(__dirname, './output'),
+      publicPath: 'output/'
+    }
+  }
 ];
