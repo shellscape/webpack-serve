@@ -10,7 +10,7 @@
   The above copyright notice and this permission notice shall be
   included in all copies or substantial portions of this Source Code Form.
 */
-require('v8-compile-cache');
+// require('v8-compile-cache');
 
 const chalk = require('chalk');
 const importLocal = require('import-local');
