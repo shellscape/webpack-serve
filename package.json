@@ -67,7 +67,7 @@
     "koa": "^2.4.1",
     "koa-webpack": "^5.1.0",
     "loud-rejection": "^1.6.0",
-    "mem": "^3.0.0",
+    "mem": "^4.0.0",
     "meow": "^5.0.0",
     "merge-options": "^1.0.1",
     "nanobus": "^4.3.1",
