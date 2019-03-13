@@ -8,6 +8,9 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
+          name: Node Info
+          command: node --version && npm --version
+      - run:
           name: Install Dependencies
           command: npm install
       - save_cache:
@@ -22,6 +25,12 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
+          name: Node Info
+          command: node --version && npm --version
+      - run:
+          name: Workaround for GoogleChrome/puppeteer#290
+          command: 'sh .circleci/setup-puppeteer.sh'
+      - run:
           name: NPM Rebuild
           command: npm install
       - run:
@@ -31,19 +40,6 @@ jobs:
           name: Submit coverage data to codecov.
           command: bash <(curl -s https://codecov.io/bash)
           when: on_success
-  node-v8-latest:
-    docker:
-      - image: rollupcabal/circleci-node-v8:latest
-    steps:
-      - checkout
-      - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
-      - run:
-          name: NPM Rebuild
-          command: npm install
-      - run:
-          name: Run unit tests.
-          command: npm run ci:test
   analysis:
     docker:
       - image: rollupcabal/circleci-node-base:latest
@@ -58,7 +54,7 @@ jobs:
           name: Run linting.
           command: npm run lint
       - run:
-          name: Run Security Check
+          name: Run NSP Security Check.
           command: npm run security
       - run:
           name: Validate Commit Messages
@@ -75,12 +71,6 @@ workflows:
             tags:
               only: /.*/
       - node-v10-latest:
-          requires:
-            - analysis
-          filters:
-            tags:
-              only: /.*/
-      - node-v8-latest:
           requires:
             - analysis
           filters:
