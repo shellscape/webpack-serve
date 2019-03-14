@@ -1,13 +1,13 @@
 {
   "name": "webpack-serve",
-  "version": "3.0.0-beta.2",
+  "version": "3.0.0-beta.3",
   "description": "A CLI for webpack-plugin-serve, providing a premier webpack development server",
   "license": "MIT",
   "repository": "shellscape/webpack-serve",
   "author": "Andrew Powell <andrew@shellscape.org>",
   "homepage": "https://github.com/shellscape/webpack-serve",
   "bugs": "https://github.com/shellscape/webpack-serve/issues",
-  "bin": "lib/cli.js",
+  "bin": "bin/webpack-serve",
   "engines": {
     "node": ">= 8.0.0 < 9.0.0 || >= 10.0.0 < 10.14.0 || >= 10.15.0"
   },
