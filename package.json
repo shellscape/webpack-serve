@@ -1,9 +1,6 @@
 {
   "name": "webpack-serve",
-  "version": "3.0.0-beta.1",
-  "publishConfig": {
-    "tag": "beta"
-  },
+  "version": "3.0.0-beta.2",
   "description": "A CLI for webpack-plugin-serve, providing a premier webpack development server",
   "license": "MIT",
   "repository": "shellscape/webpack-serve",
@@ -41,6 +38,7 @@
     "import-local": "^2.0.0",
     "is-plain-obj": "^1.1.0",
     "object-path": "^0.11.4",
+    "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
     "webpack-plugin-serve": "^0.7.3",

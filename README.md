@@ -21,7 +21,9 @@
 
 # webpack-serve
 
-A CLI for [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) - A Webpack development server in a plugin. _(While using a CLI such as webpack-serve is convenient, we recommend using `webpack-plugin-serve` directly in your webpack config instead.)_
+A CLI for [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) - A Webpack development server in a plugin.
+
+_(While using a CLI such as webpack-serve is convenient, we recommend using [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) directly in your webpack config, with [`webpack-nano`](https://github.com/shellscape/webpack-nano), instead.)_
 
 <a href="https://www.patreon.com/shellscape">
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
@@ -88,6 +90,26 @@ Examples
 ## Flags
 
 Please reference the [`webpack-plugin-serve` Options](https://github.com/shellscape/webpack-plugin-serve#options) for information and use. Most options are analogous to the flags listed above.
+
+## package.json Options
+
+For convenience, `webpack-plugin-serve` options can also be defined in a `package.json` file. This CLI will look for a `serve` key in the nearest `package.json` beginning in the directory containing the specified `webpack.config.js`, up to the current working directory. Please reference the [`webpack-plugin-serve` Options](https://github.com/shellscape/webpack-plugin-serve#options) for information and use.
+
+For Example:
+
+```json
+{
+	"name": "some-package",
+	"version": "1.0.0",
+	"serve": {
+    "host": "10.10.10.1"
+  }
+}
+```
+
+## Advanced Options
+
+For options which require providing functions or complex objects like `Promises` which cannot be represented by JSON, nor on the command line, please use [`webpack-plugin-serve`](https://github.com/shellscape/webpack-plugin-serve) directly in your webpack config, along with [`webpack-nano`](https://github.com/shellscape/webpack-nano).
 
 ## Meta
 

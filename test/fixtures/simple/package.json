@@ -1,0 +1,7 @@
+{
+	"name": "some-package",
+	"version": "1.0.0",
+	"serve": {
+    "port": 50000
+  }
+}
