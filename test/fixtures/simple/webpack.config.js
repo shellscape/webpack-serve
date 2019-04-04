@@ -8,6 +8,5 @@ module.exports = {
     filename: './output.js',
     path: resolve(__dirname, './output'),
     publicPath: 'output/'
-  },
-  watch: true
+  }
 };

@@ -71,6 +71,7 @@ Options
   --host              Sets the host the server should listen from
   --http2             Instructs the server to enable HTTP2
   --live-reload       Instructs the client to perform a full page reload after each build
+  --no-watch          Does not apply \`watch: true\` to the config, allowing for greater customization
   --open              Opens the default browser to the set host and port
   --port              Sets the port on which the server should listen
   --progress          Shows build progress in the client
@@ -90,6 +91,10 @@ Examples
 ## Flags
 
 Please reference the [`webpack-plugin-serve` Options](https://github.com/shellscape/webpack-plugin-serve#options) for information and use. Most options are analogous to the flags listed above.
+
+#### `--no-watch`
+
+By default, the CLI will apply `watch: true` to the first config in the targeted webpack config file. To customize watching or `watchOptions`, please use this flag and customize the config(s) accordingly.
 
 ## package.json Options
 

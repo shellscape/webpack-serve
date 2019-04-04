@@ -41,7 +41,7 @@
     "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
-    "webpack-plugin-serve": "^0.7.3",
+    "webpack-plugin-serve": "^0.8.0",
     "yargs-parser": "^13.0.0"
   },
   "devDependencies": {
@@ -61,7 +61,8 @@
     "puppeteer": "^1.13.0",
     "standard-version": "^5.0.1",
     "strip-ansi": "^5.1.0",
-    "webpack": "^4.29.6"
+    "webpack": "^4.29.6",
+    "webpack-nano": "^0.6.1"
   },
   "keywords": [
     "development",
