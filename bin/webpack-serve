@@ -35,8 +35,8 @@ const help = chalk`
     --all               Apply webpack-plugin-serve to all compilers in the config
     --client.address    Overrides the WebSocket address in the client
     --client.retry      Instructs the client to attempt to reconnect all WebSockets when interrupted
-    --client.silent     Instructs the client not to log anything to the console.
-    --compress          Enables compression middleware which serves files with GZip compression.
+    --client.silent     Instructs the client not to log anything to the console
+    --compress          Enables compression middleware which serves files with GZip compression
     --config            A path to a webpack config file
     --config.\{name\}   A path to a webpack config file, and the config name to run
     --help              Displays this message
@@ -45,6 +45,7 @@ const help = chalk`
     --host              Sets the host the server should listen from
     --http2             Instructs the server to enable HTTP2
     --live-reload       Instructs the client to perform a full page reload after each build
+    --no-watch          Does not apply \`watch: true\` to the config, allowing for greater customization
     --open              Opens the default browser to the set host and port
     --port              Sets the port on which the server should listen
     --progress          Shows build progress in the client
@@ -52,7 +53,7 @@ const help = chalk`
     --static            Sets the directory from which static files will be served
     --status            Shows build status (errors, warnings) in the client
     --version           Displays webpack-nano and webpack versions
-    --wait-for-build    Instructs the server to halt middleware processing until the current build is done.
+    --wait-for-build    Instructs the server to halt middleware processing until the current build is done
 
   {underline Examples}
     $ webpack-serve
@@ -96,6 +97,7 @@ webpack       v${webpack.version}
   }
 
   const config = await loadConfig(argv);
+
   run(config, log);
 };
 

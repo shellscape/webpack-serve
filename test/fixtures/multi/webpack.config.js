@@ -9,8 +9,7 @@ module.exports = [
       filename: './dist-app.js',
       path: resolve(__dirname, './output'),
       publicPath: 'output/'
-    },
-    watch: true
+    }
   },
   {
     context: __dirname,
