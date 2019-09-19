@@ -41,8 +41,8 @@
     "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
-    "webpack-plugin-serve": "^0.11.0",
-    "yargs-parser": "^13.0.0"
+    "webpack-plugin-serve": "^0.12.1",
+    "yargs-parser": "^14.0.0"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.2.0",
@@ -50,8 +50,7 @@
     "@commitlint/cli": "^8.1.0",
     "@commitlint/config-conventional": "^8.1.0",
     "ava": "^2.2.0",
-    "eslint": "^6.0.1",
-    "eslint-config-shellscape": "^2.0.2",
+    "eslint-config-shellscape": "^2.1.0",
     "execa": "^2.0.3",
     "get-port": "^5.0.0",
     "lint-staged": "^9.2.0",
@@ -59,10 +58,10 @@
     "pre-commit": "^1.2.2",
     "prettier": "^1.14.3",
     "puppeteer": "^1.13.0",
-    "standard-version": "^6.0.1",
+    "standard-version": "^7.0.0",
     "strip-ansi": "^5.1.0",
     "webpack": "^4.29.6",
-    "webpack-nano": "^0.6.1"
+    "webpack-nano": "^0.8.1"
   },
   "keywords": [
     "development",
