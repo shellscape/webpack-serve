@@ -1,6 +1,6 @@
 {
   "name": "webpack-serve",
-  "version": "3.1.1",
+  "version": "3.2.0",
   "description": "A CLI for webpack-plugin-serve, providing a premier webpack development server",
   "license": "MIT",
   "repository": "shellscape/webpack-serve",
