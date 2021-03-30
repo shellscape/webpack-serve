@@ -41,7 +41,7 @@
     "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
-    "webpack-plugin-serve": "^0.12.1",
+    "webpack-plugin-serve": "^1.2.0",
     "yargs-parser": "^14.0.0"
   },
   "devDependencies": {
