@@ -20,7 +20,7 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "lint": "eslint --fix --cache bin/* lib test",
     "lint-staged": "lint-staged",
-    "security": "npm audit",
+    "security": "npm audit --audit-level=moderate",
     "test": "ava"
   },
   "files": [
@@ -33,35 +33,35 @@
     "webpack": "^4.29.0"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "decamelize": "^3.0.0",
+    "chalk": "^4.1.0",
+    "decamelize": "^5.0.0",
     "import-local": "^3.0.1",
-    "is-plain-obj": "^2.0.0",
-    "object-path": "^0.11.4",
+    "is-plain-obj": "^3.0.0",
+    "object-path": "^0.11.5",
     "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
-    "webpack-plugin-serve": "^0.12.1",
-    "yargs-parser": "^14.0.0"
+    "webpack-plugin-serve": "^1.4.1",
+    "yargs-parser": "^20.2.7"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.2.0",
     "@babel/register": "^7.0.0",
-    "@commitlint/cli": "^8.1.0",
-    "@commitlint/config-conventional": "^8.1.0",
-    "ava": "^2.2.0",
-    "eslint-config-shellscape": "^2.1.0",
-    "execa": "^2.0.3",
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "ava": "^2.4.0",
+    "eslint-config-shellscape": "^3.0.0",
+    "execa": "^5.0.0",
     "get-port": "^5.0.0",
-    "lint-staged": "^9.2.0",
-    "nyc": "^14.1.1",
+    "lint-staged": "^10.5.4",
+    "nyc": "^15.1.0",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.14.3",
+    "prettier": "^2.2.1",
     "puppeteer": "^1.13.0",
-    "standard-version": "^7.0.0",
-    "strip-ansi": "^5.1.0",
+    "standard-version": "^9.1.1",
+    "strip-ansi": "^6.0.0",
     "webpack": "^4.29.6",
-    "webpack-nano": "^0.8.1"
+    "webpack-nano": "^1.1.1"
   },
   "keywords": [
     "development",
