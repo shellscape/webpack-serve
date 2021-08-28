@@ -37,7 +37,7 @@
     "decamelize": "^5.0.0",
     "import-local": "^3.0.1",
     "is-plain-obj": "^3.0.0",
-    "object-path": "^0.11.5",
+    "object-path": "^0.11.6",
     "pkg-conf": "^3.0.0",
     "rechoir": "^0.7.0",
     "v8-compile-cache": "^2.0.2",
